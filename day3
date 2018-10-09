@@ -1,0 +1,181 @@
+1:-Write a program to get two integers from the user and print the sum of the two integers?
+#include<stdio.h>
+void main()
+{
+    int a,b;
+    printf("enter two numbers:");
+    scanf("%d%d",&a,&b);
+    
+    printf("the sum of two numbers:%d",(a+b));
+}
+
+
+
+2:-Write a function to add two integers. 
+#include<stdio.h>
+int sum(int a, int b);
+void main()
+{
+    int a,b,add;
+    printf("\n enter the numbers:");
+    scanf("%d%d",&a,&b);
+    
+    add=sum(a,b);
+    printf("sum=%d",add);
+    
+}
+
+int sum(int a,int b)
+{
+    int add;
+    add=a+b;
+    return add;
+}
+
+
+
+
+
+
+3:-Write a program to get two float from the user and print the sum of the two float?
+#include<stdio.h>
+void main()
+{
+    float a,b;
+    printf("enter two numbers:");
+    scanf("%f%f",&a,&b);
+    
+    printf("%f",a+b);
+}
+
+
+4:-Write a function to add two float.
+#include<stdio.h>
+float sum(float a,float b);
+void main()
+{
+    float a,b,add;
+    printf("enter the numbers:");
+    scanf("%f%f",&a,&b);
+    
+    add=sum(a,b);
+    printf("total=%f",add);
+    
+}
+
+float sum(float a,float b)
+{
+    float result;
+    result=a+b;
+    return result;
+}
+
+
+
+
+5:-Write a function to compare 2 numbers and test it.
+#include<stdio.h>
+int compare(int a,int b);
+void main()
+{
+    int a,b,large;
+    printf("enter the numbers:");
+    scanf("%d%d",&a,&b);
+    
+    large=compare(a,b);
+    printf("largest=%d",large);
+    
+}
+
+int compare(int a,int b)
+{
+    if(a>b)
+    return a;
+    else
+    return b;
+}
+
+
+
+
+
+
+6:-Write a function to compare 3 numbers and test it.
+#include<stdio.h>
+int compare(int a,int b,int c);
+void main()
+{
+    int a,b,c,large;
+    printf("enter the numbers:");
+    scanf("%d%d%d",&a,&b,&c);
+    
+    large=compare(a,b,c);
+    printf("largest=%d",large);
+    
+}
+
+int compare(int a,int b,int c)
+{
+    if(a>b && a>c)
+    return a;
+    if(b>a && b>c)
+    return b;
+    else
+    return c;
+}
+
+
+7:-What is the structure of a program?
+It consist of functions
+Userdefined functions
+Standard library functions
+Main function
+
+8:-What is the difference between %d and %f format specifiers?
+ %d format specifier is used to read an integer from the user while %f is used for reading floating or decimal values input from the user.
+
+9:-What is a function?
+A function is a segment that groups code to perform a specific task
+
+10:-What is a function definition?
+Function definition is declaring the function name, parameters and return type
+
+11:-What is a function declaration?
+A function declaration tells the compiler about a function name and how to call the function
+
+
+12:-Why do you need function declaration?
+To let the compiler know about the user defined function.
+
+
+13:-What are the formal parameters?
+Formal parameters are used to declare some variables that exists in the function
+
+14:-What are the actual parameters?
+Actual parameters are the variables that contains the value which we have to compute in the function.
+
+15:-What is the meaning of pass by value?
+If data is passed by value, the data is copied from the variable used in for example main() to a variable used by the function.
+
+
+16:-What is the meaning of pass by reference?
+If data is passed by reference, a pointer to the data is copied instead of the actual variable as is done in a call by value.
+
+
+
+17:-List all syntax errors and reason for the syntax errors.
+Syntax Errors:=
+Missing Parenthesis (})
+Printing the value of variable without declaring it
+Missing semicolon
+
+
+18:-What is the meaning of floating point number?
+Floating point numbers means that there is no fixed number of digits before and after the decimal point that is, the decimal point can float
+
+
+19:-Is there a limit to how big an integer can be me in c program?
+It depends on the size of your system.
+
+20:-Is there a limit to how big a floating point number can be in a c program?
+-3.4E+38 to +3.4E+38
